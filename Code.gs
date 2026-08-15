@@ -1,5 +1,5 @@
 /**
- * Shopifyの注文Webhookを受信し、
+ * ECサイトの注文Webhookを受信し、
  * 対象SKUの商品が含まれている場合に
  * ChatWorkへ通知するスクリプト
  */
@@ -15,7 +15,7 @@ const CHATWORK_TOKEN = "***";
 const CHATWORK_ROOM_ID = "***";
 
 /***************
- * Webhook受信（Shopify -> GAS）
+ * Webhook受信（ECサイト -> GAS）
  ***************/
 function doPost(e) {
   const ss = SpreadsheetApp.openById(SS_ID);
